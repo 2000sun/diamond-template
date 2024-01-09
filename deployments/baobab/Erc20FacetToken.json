@@ -1,0 +1,423 @@
+{
+  "address": "0x4539D3582fcf61c19686B4b4F546F0c78b010d43",
+  "abi": [
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "owner",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "spender",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "value",
+          "type": "uint256"
+        }
+      ],
+      "name": "Approval",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "from",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "to",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "value",
+          "type": "uint256"
+        }
+      ],
+      "name": "Transfer",
+      "type": "event"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "owner_",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "spender_",
+          "type": "address"
+        }
+      ],
+      "name": "allowance",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "spender_",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "amount_",
+          "type": "uint256"
+        }
+      ],
+      "name": "approve",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "account_",
+          "type": "address"
+        }
+      ],
+      "name": "balanceOf",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "construct",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "decimals",
+      "outputs": [
+        {
+          "internalType": "uint8",
+          "name": "",
+          "type": "uint8"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_user",
+          "type": "address"
+        }
+      ],
+      "name": "getViewUser",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "address",
+              "name": "account",
+              "type": "address"
+            },
+            {
+              "internalType": "uint256",
+              "name": "telegramId",
+              "type": "uint256"
+            },
+            {
+              "internalType": "string",
+              "name": "useWallet",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "nation",
+              "type": "string"
+            }
+          ],
+          "internalType": "struct User",
+          "name": "",
+          "type": "tuple"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "name",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "symbol",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "totalSupply",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "to_",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "amount_",
+          "type": "uint256"
+        }
+      ],
+      "name": "transfer",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "from_",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "to_",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "amount_",
+          "type": "uint256"
+        }
+      ],
+      "name": "transferFrom",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "args": [],
+  "numDeployments": 1,
+  "solcInputHash": "6a165253e6a03295f502a74c07db0d8d",
+  "metadata": "{\"compiler\":{\"version\":\"0.8.19+commit.7dd6d404\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"owner\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"spender\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"value\",\"type\":\"uint256\"}],\"name\":\"Approval\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"from\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"value\",\"type\":\"uint256\"}],\"name\":\"Transfer\",\"type\":\"event\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"owner_\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"spender_\",\"type\":\"address\"}],\"name\":\"allowance\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"spender_\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"amount_\",\"type\":\"uint256\"}],\"name\":\"approve\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"account_\",\"type\":\"address\"}],\"name\":\"balanceOf\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"construct\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"decimals\",\"outputs\":[{\"internalType\":\"uint8\",\"name\":\"\",\"type\":\"uint8\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_user\",\"type\":\"address\"}],\"name\":\"getViewUser\",\"outputs\":[{\"components\":[{\"internalType\":\"address\",\"name\":\"account\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"telegramId\",\"type\":\"uint256\"},{\"internalType\":\"string\",\"name\":\"useWallet\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"nation\",\"type\":\"string\"}],\"internalType\":\"struct User\",\"name\":\"\",\"type\":\"tuple\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"name\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"symbol\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"totalSupply\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"to_\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"amount_\",\"type\":\"uint256\"}],\"name\":\"transfer\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"from_\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"to_\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"amount_\",\"type\":\"uint256\"}],\"name\":\"transferFrom\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"events\":{\"Approval(address,address,uint256)\":{\"details\":\"Emitted when the allowance of a `spender` for an `owner` is set by a call to {approve}. `value` is the new allowance.\"},\"Transfer(address,address,uint256)\":{\"details\":\"Emitted when `value` tokens are moved from one account (`from`) to another (`to`). Note that `value` may be zero.\"}},\"kind\":\"dev\",\"methods\":{\"totalSupply()\":{\"details\":\"Returns the amount of tokens in existence.\"}},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/facets/ERC20Facet.sol\":\"Erc20FacetToken\"},\"evmVersion\":\"paris\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\",\"useLiteralContent\":true},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"contracts/facets/ERC20Facet.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\npragma solidity ^0.8.0;\\n\\nimport { LibDiamond } from \\\"../libraries/LibDiamond.sol\\\";\\nimport \\\"../storage/facets/AppStorageFacet.sol\\\";\\nimport \\\"../storage/facets/ERC20StorageFacet.sol\\\";\\nimport \\\"../interfaces/IERC20.sol\\\";\\n\\ncontract Erc20FacetToken is AppStorageFacet, ERC20StorageFacet, IERC20 {\\n\\n    function construct() external returns (bool){\\n       ERC20FacetStorage storage _ds = erc20Storage();\\n        /* string memory name_, string memory symbol_ */\\n       _ds._name = \\\"jangju\\\";\\n       _ds._symbol = \\\"jj\\\";\\n       _ds._decimals = 18;\\n       _ds._totalSupply = 1000000 * 10**_ds._decimals;\\n       _ds._balances[msg.sender] = _ds._totalSupply;\\n       return true;\\n    }\\n\\n    function symbol() public view virtual returns (string memory) {\\n        ERC20FacetStorage storage _ds = erc20Storage();\\n        return _ds._symbol;\\n    }\\n\\n    function name() public view virtual returns (string memory) {\\n        ERC20FacetStorage storage _ds = erc20Storage();\\n        return _ds._name;\\n    }\\n\\n    function decimals() public view virtual returns (uint8) {\\n        ERC20FacetStorage storage _ds = erc20Storage();\\n        return _ds._decimals;\\n    }\\n\\n    // ERC20 INTERFACE FUNCTIONS\\n\\n    function totalSupply() external view returns (uint256){\\n      ERC20FacetStorage storage _ds = erc20Storage();\\n      return _ds._totalSupply;\\n    }\\n\\n    function balanceOf(address account_) external view returns (uint256){\\n      ERC20FacetStorage storage _ds = erc20Storage();\\n      return _ds._balances[account_];\\n    }\\n\\n    function transfer(address to_, uint256 amount_) external returns (bool){\\n      return _transfer(msg.sender,to_,amount_);\\n    }\\n\\n    function transferFrom(address from_, address to_, uint256 amount_) external returns (bool){\\n      _requireAllowance(from_, to_, amount_);\\n      return _transfer(from_,to_,amount_);\\n    }\\n\\n    function allowance(address owner_, address spender_) public view returns (uint256){\\n      ERC20FacetStorage storage _ds = erc20Storage();\\n      return _ds._allowances[owner_][spender_];\\n    }\\n\\n    function approve(address spender_, uint256 amount_) external returns (bool){\\n      return _approve(msg.sender,spender_,amount_);\\n    }\\n\\n    // EXTENDED FUNCTIONS\\n\\n    // PRIVATE FUNCTIONS\\n\\n    function _requireFunds(address from_, uint256 amount_) private view {\\n      require(_sufficientFunds(from_, amount_), \\\"ERC20: Insufficient Funds\\\");\\n    }\\n\\n    function _requireAllowance(address owner_, address spender_, uint256 amount_) private view {\\n      require(_sufficientAllowance(owner_,spender_, amount_), \\\"ERC20: Insufficient Allowance\\\");\\n    }\\n\\n    function _sufficientFunds(address from_, uint256 amount_) private view returns (bool){\\n      ERC20FacetStorage storage _ds = erc20Storage();\\n      return _ds._balances[from_] >= amount_;\\n    }\\n\\n    function _sufficientAllowance(address owner_, address spender_, uint256 amount_) private view returns (bool){\\n      ERC20FacetStorage storage _ds = erc20Storage();\\n      return _ds._allowances[owner_][spender_] >= amount_;\\n    }\\n\\n    function _approve(address approver_, address spender_, uint256 amount_) private returns (bool){\\n      _requireFunds(approver_, amount_);\\n\\n      ERC20FacetStorage storage _ds = erc20Storage();\\n      _ds._allowances[approver_][spender_] = amount_;\\n\\n      emit Approval(approver_, spender_, amount_);\\n      return true;\\n    }\\n\\n    function _transfer(address from_, address to_, uint256 amount_) private returns (bool){\\n      _requireFunds(from_, amount_);\\n\\n      ERC20FacetStorage storage _ds = erc20Storage();\\n      _ds._balances[from_] -= amount_;\\n      _ds._balances[to_] += amount_;\\n\\n      emit Transfer(from_, to_, amount_);\\n      return true;\\n    }\\n\\n    function _mint(address to_, uint256 amount_) private returns (bool){\\n      require(to_ != address(0), \\\"ERC20: can't mint to 0 address\\\");\\n      ERC20FacetStorage storage _ds = erc20Storage();\\n      _ds._totalSupply += amount_;\\n      _ds._balances[to_] += amount_;\\n\\n      emit Transfer(address(0), to_, amount_);\\n      return true;\\n    }\\n\\n    function _burn(address from_, uint256 amount_) private returns (bool){\\n      require(from_ != address(0), \\\"ERC20: can't burn from 0 address\\\");\\n      _requireFunds(from_, amount_);\\n\\n      ERC20FacetStorage storage _ds = erc20Storage();\\n      _ds._balances[from_] -= amount_;\\n      _ds._totalSupply -= amount_;\\n\\n      emit Transfer(from_, address(0), amount_);\\n      return true;\\n    }\\n\\n    function getViewUser(address _user) external view returns (User memory) {\\n        AppStorage storage s = appStorage();\\n        return s._users[_user];\\n    }\\n}\\n\",\"keccak256\":\"0x572d4341e94d339123e9c50d83bf3baf708255232a7404958c45d54e4ebdf30f\",\"license\":\"MIT\"},\"contracts/interfaces/IDiamondCut.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\npragma solidity ^0.8.18;\\n\\n/******************************************************************************\\\\\\n* Author: Nick Mudge <nick@perfectabstractions.com> (https://twitter.com/mudgen)\\n* EIP-2535 Diamonds: https://eips.ethereum.org/EIPS/eip-2535\\n/******************************************************************************/\\n\\ninterface IDiamondCut {\\n    enum FacetCutAction {Add, Replace, Remove}\\n    // Add=0, Replace=1, Remove=2\\n\\n    struct FacetCut {\\n        address facetAddress;\\n        FacetCutAction action;\\n        bytes4[] functionSelectors;\\n    }\\n\\n    /// @notice Add/replace/remove any number of functions and optionally execute\\n    ///         a function with delegatecall\\n    /// @param _diamondCut Contains the facet addresses and function selectors\\n    /// @param _init The address of the contract or facet to execute _calldata\\n    /// @param _calldata A function call, including function selector and arguments\\n    ///                  _calldata is executed with delegatecall on _init\\n    function diamondCut(\\n        FacetCut[] calldata _diamondCut,\\n        address _init,\\n        bytes calldata _calldata\\n    ) external;\\n\\n    event DiamondCut(FacetCut[] _diamondCut, address _init, bytes _calldata);\\n}\\n\",\"keccak256\":\"0xdc916985bab8246380c2188436b2e25e333d34e9fdc7bf3b0245f5bcc716e5dc\",\"license\":\"MIT\"},\"contracts/interfaces/IERC20.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\n// OpenZeppelin Contracts (last updated v4.6.0) (token/ERC20/IERC20.sol)\\n\\npragma solidity ^0.8.0;\\n\\n/**\\n * @dev Interface of the ERC20 standard as defined in the EIP.\\n */\\ninterface IERC20 {\\n    /**\\n     * @dev Emitted when `value` tokens are moved from one account (`from`) to\\n     * another (`to`).\\n     *\\n     * Note that `value` may be zero.\\n     */\\n    event Transfer(address indexed from, address indexed to, uint256 value);\\n\\n    /**\\n     * @dev Emitted when the allowance of a `spender` for an `owner` is set by\\n     * a call to {approve}. `value` is the new allowance.\\n     */\\n    event Approval(address indexed owner, address indexed spender, uint256 value);\\n\\n    /**\\n     * @dev Returns the amount of tokens in existence.\\n     */\\n    function totalSupply() external view returns (uint256);\\n\\n    /**\\n     * @dev Returns the amount of tokens owned by `account`.\\n     */\\n    function balanceOf(address account) external view returns (uint256);\\n\\n    /**\\n     * @dev Moves `amount` tokens from the caller's account to `to`.\\n     *\\n     * Returns a boolean value indicating whether the operation succeeded.\\n     *\\n     * Emits a {Transfer} event.\\n     */\\n    function transfer(address to, uint256 amount) external returns (bool);\\n\\n    /**\\n     * @dev Returns the remaining number of tokens that `spender` will be\\n     * allowed to spend on behalf of `owner` through {transferFrom}. This is\\n     * zero by default.\\n     *\\n     * This value changes when {approve} or {transferFrom} are called.\\n     */\\n    function allowance(address owner, address spender) external view returns (uint256);\\n\\n    /**\\n     * @dev Sets `amount` as the allowance of `spender` over the caller's tokens.\\n     *\\n     * Returns a boolean value indicating whether the operation succeeded.\\n     *\\n     * IMPORTANT: Beware that changing an allowance with this method brings the risk\\n     * that someone may use both the old and the new allowance by unfortunate\\n     * transaction ordering. One possible solution to mitigate this race\\n     * condition is to first reduce the spender's allowance to 0 and set the\\n     * desired value afterwards:\\n     * https://github.com/ethereum/EIPs/issues/20#issuecomment-263524729\\n     *\\n     * Emits an {Approval} event.\\n     */\\n    function approve(address spender, uint256 amount) external returns (bool);\\n\\n    /**\\n     * @dev Moves `amount` tokens from `from` to `to` using the\\n     * allowance mechanism. `amount` is then deducted from the caller's\\n     * allowance.\\n     *\\n     * Returns a boolean value indicating whether the operation succeeded.\\n     *\\n     * Emits a {Transfer} event.\\n     */\\n    function transferFrom(\\n        address from,\\n        address to,\\n        uint256 amount\\n    ) external returns (bool);\\n}\\n\",\"keccak256\":\"0x9750c6b834f7b43000631af5cc30001c5f547b3ceb3635488f140f60e897ea6b\",\"license\":\"MIT\"},\"contracts/libraries/LibDiamond.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\npragma solidity ^0.8.18;\\n\\n/******************************************************************************\\\\\\n* Author: Nick Mudge <nick@perfectabstractions.com> (https://twitter.com/mudgen)\\n* EIP-2535 Diamonds: https://eips.ethereum.org/EIPS/eip-2535\\n/******************************************************************************/\\nimport { IDiamondCut } from \\\"../interfaces/IDiamondCut.sol\\\";\\n\\n// Remember to add the loupe functions from DiamondLoupeFacet to the diamond.\\n// The loupe functions are required by the EIP2535 Diamonds standard\\n\\nerror InitializationFunctionReverted(address _initializationContractAddress, bytes _calldata);\\n\\nlibrary LibDiamond {\\n    bytes32 constant DIAMOND_STORAGE_POSITION = keccak256(\\\"diamond.standard.diamond.storage\\\");\\n\\n    struct DiamondStorage {\\n        // maps function selectors to the facets that execute the functions.\\n        // and maps the selectors to their position in the selectorSlots array.\\n        // func selector => address facet, selector position\\n        mapping(bytes4 => bytes32) facets;\\n        // array of slots of function selectors.\\n        // each slot holds 8 function selectors.\\n        mapping(uint256 => bytes32) selectorSlots;\\n        // The number of function selectors in selectorSlots\\n        uint16 selectorCount;\\n        // Used to query if a contract implements an interface.\\n        // Used to implement ERC-165.\\n        mapping(bytes4 => bool) supportedInterfaces;\\n        // owner of the contract\\n        address contractOwner;\\n    }\\n\\n    function diamondStorage() internal pure returns (DiamondStorage storage ds) {\\n        bytes32 position = DIAMOND_STORAGE_POSITION;\\n        assembly {\\n            ds.slot := position\\n        }\\n    }\\n\\n    event OwnershipTransferred(address indexed previousOwner, address indexed newOwner);\\n\\n    function setContractOwner(address _newOwner) internal {\\n        DiamondStorage storage ds = diamondStorage();\\n        address previousOwner = ds.contractOwner;\\n        ds.contractOwner = _newOwner;\\n        emit OwnershipTransferred(previousOwner, _newOwner);\\n    }\\n\\n    function contractOwner() internal view returns (address contractOwner_) {\\n        contractOwner_ = diamondStorage().contractOwner;\\n    }\\n\\n    function enforceIsContractOwner() internal view {\\n        require(msg.sender == diamondStorage().contractOwner, \\\"LibDiamond: Must be contract owner\\\");\\n    }\\n\\n    event DiamondCut(IDiamondCut.FacetCut[] _diamondCut, address _init, bytes _calldata);\\n\\n    bytes32 constant CLEAR_ADDRESS_MASK = bytes32(uint256(0xffffffffffffffffffffffff));\\n    bytes32 constant CLEAR_SELECTOR_MASK = bytes32(uint256(0xffffffff << 224));\\n\\n    // Internal function version of diamondCut\\n    // This code is almost the same as the external diamondCut,\\n    // except it is using 'Facet[] memory _diamondCut' instead of\\n    // 'Facet[] calldata _diamondCut'.\\n    // The code is duplicated to prevent copying calldata to memory which\\n    // causes an error for a two dimensional array.\\n    function diamondCut(\\n        IDiamondCut.FacetCut[] memory _diamondCut,\\n        address _init,\\n        bytes memory _calldata\\n    ) internal {\\n        DiamondStorage storage ds = diamondStorage();\\n        uint256 originalSelectorCount = ds.selectorCount;\\n        uint256 selectorCount = originalSelectorCount;\\n        bytes32 selectorSlot;\\n        // Check if last selector slot is not full\\n        // \\\"selectorCount & 7\\\" is a gas efficient modulo by eight \\\"selectorCount % 8\\\" \\n        if (selectorCount & 7 > 0) {\\n            // get last selectorSlot\\n            // \\\"selectorSlot >> 3\\\" is a gas efficient division by 8 \\\"selectorSlot / 8\\\"\\n            selectorSlot = ds.selectorSlots[selectorCount >> 3];\\n        }\\n        // loop through diamond cut\\n        for (uint256 facetIndex; facetIndex < _diamondCut.length; ) {\\n            (selectorCount, selectorSlot) = addReplaceRemoveFacetSelectors(\\n                selectorCount,\\n                selectorSlot,\\n                _diamondCut[facetIndex].facetAddress,\\n                _diamondCut[facetIndex].action,\\n                _diamondCut[facetIndex].functionSelectors\\n            );\\n\\n            unchecked {\\n                facetIndex++;\\n            }\\n        }\\n        if (selectorCount != originalSelectorCount) {\\n            ds.selectorCount = uint16(selectorCount);\\n        }\\n        // If last selector slot is not full\\n        // \\\"selectorCount & 7\\\" is a gas efficient modulo by eight \\\"selectorCount % 8\\\" \\n        if (selectorCount & 7 > 0) {\\n            // \\\"selectorSlot >> 3\\\" is a gas efficient division by 8 \\\"selectorSlot / 8\\\"\\n            ds.selectorSlots[selectorCount >> 3] = selectorSlot;\\n        }\\n        emit DiamondCut(_diamondCut, _init, _calldata);\\n        initializeDiamondCut(_init, _calldata);\\n    }\\n\\n    function addReplaceRemoveFacetSelectors(\\n        uint256 _selectorCount,\\n        bytes32 _selectorSlot,\\n        address _newFacetAddress,\\n        IDiamondCut.FacetCutAction _action,\\n        bytes4[] memory _selectors\\n    ) internal returns (uint256, bytes32) {\\n        DiamondStorage storage ds = diamondStorage();\\n        require(_selectors.length > 0, \\\"LibDiamondCut: No selectors in facet to cut\\\");\\n        if (_action == IDiamondCut.FacetCutAction.Add) {\\n            enforceHasContractCode(_newFacetAddress, \\\"LibDiamondCut: Add facet has no code\\\");\\n            for (uint256 selectorIndex; selectorIndex < _selectors.length; ) {\\n                bytes4 selector = _selectors[selectorIndex];\\n                bytes32 oldFacet = ds.facets[selector];\\n                require(address(bytes20(oldFacet)) == address(0), \\\"LibDiamondCut: Can't add function that already exists\\\");\\n                // add facet for selector\\n                ds.facets[selector] = bytes20(_newFacetAddress) | bytes32(_selectorCount);\\n                // \\\"_selectorCount & 7\\\" is a gas efficient modulo by eight \\\"_selectorCount % 8\\\" \\n                // \\\" << 5 is the same as multiplying by 32 ( * 32)\\n                uint256 selectorInSlotPosition = (_selectorCount & 7) << 5;\\n                // clear selector position in slot and add selector\\n                _selectorSlot = (_selectorSlot & ~(CLEAR_SELECTOR_MASK >> selectorInSlotPosition)) | (bytes32(selector) >> selectorInSlotPosition);\\n                // if slot is full then write it to storage\\n                if (selectorInSlotPosition == 224) {\\n                    // \\\"_selectorSlot >> 3\\\" is a gas efficient division by 8 \\\"_selectorSlot / 8\\\"\\n                    ds.selectorSlots[_selectorCount >> 3] = _selectorSlot;\\n                    _selectorSlot = 0;\\n                }\\n                _selectorCount++;\\n\\n                unchecked {\\n                    selectorIndex++;\\n                }\\n            }\\n        } else if (_action == IDiamondCut.FacetCutAction.Replace) {\\n            enforceHasContractCode(_newFacetAddress, \\\"LibDiamondCut: Replace facet has no code\\\");\\n            for (uint256 selectorIndex; selectorIndex < _selectors.length; ) {\\n                bytes4 selector = _selectors[selectorIndex];\\n                bytes32 oldFacet = ds.facets[selector];\\n                address oldFacetAddress = address(bytes20(oldFacet));\\n                // only useful if immutable functions exist\\n                require(oldFacetAddress != address(this), \\\"LibDiamondCut: Can't replace immutable function\\\");\\n                require(oldFacetAddress != _newFacetAddress, \\\"LibDiamondCut: Can't replace function with same function\\\");\\n                require(oldFacetAddress != address(0), \\\"LibDiamondCut: Can't replace function that doesn't exist\\\");\\n                // replace old facet address\\n                ds.facets[selector] = (oldFacet & CLEAR_ADDRESS_MASK) | bytes20(_newFacetAddress);\\n\\n                unchecked {\\n                    selectorIndex++;\\n                }\\n            }\\n        } else if (_action == IDiamondCut.FacetCutAction.Remove) {\\n            require(_newFacetAddress == address(0), \\\"LibDiamondCut: Remove facet address must be address(0)\\\");\\n            // \\\"_selectorCount >> 3\\\" is a gas efficient division by 8 \\\"_selectorCount / 8\\\"\\n            uint256 selectorSlotCount = _selectorCount >> 3;\\n            // \\\"_selectorCount & 7\\\" is a gas efficient modulo by eight \\\"_selectorCount % 8\\\" \\n            uint256 selectorInSlotIndex = _selectorCount & 7;\\n            for (uint256 selectorIndex; selectorIndex < _selectors.length; ) {\\n                if (_selectorSlot == 0) {\\n                    // get last selectorSlot\\n                    selectorSlotCount--;\\n                    _selectorSlot = ds.selectorSlots[selectorSlotCount];\\n                    selectorInSlotIndex = 7;\\n                } else {\\n                    selectorInSlotIndex--;\\n                }\\n                bytes4 lastSelector;\\n                uint256 oldSelectorsSlotCount;\\n                uint256 oldSelectorInSlotPosition;\\n                // adding a block here prevents stack too deep error\\n                {\\n                    bytes4 selector = _selectors[selectorIndex];\\n                    bytes32 oldFacet = ds.facets[selector];\\n                    require(address(bytes20(oldFacet)) != address(0), \\\"LibDiamondCut: Can't remove function that doesn't exist\\\");\\n                    // only useful if immutable functions exist\\n                    require(address(bytes20(oldFacet)) != address(this), \\\"LibDiamondCut: Can't remove immutable function\\\");\\n                    // replace selector with last selector in ds.facets\\n                    // gets the last selector\\n                    // \\\" << 5 is the same as multiplying by 32 ( * 32)\\n                    lastSelector = bytes4(_selectorSlot << (selectorInSlotIndex << 5));\\n                    if (lastSelector != selector) {\\n                        // update last selector slot position info\\n                        ds.facets[lastSelector] = (oldFacet & CLEAR_ADDRESS_MASK) | bytes20(ds.facets[lastSelector]);\\n                    }\\n                    delete ds.facets[selector];\\n                    uint256 oldSelectorCount = uint16(uint256(oldFacet));\\n                    // \\\"oldSelectorCount >> 3\\\" is a gas efficient division by 8 \\\"oldSelectorCount / 8\\\"\\n                    oldSelectorsSlotCount = oldSelectorCount >> 3;\\n                    // \\\"oldSelectorCount & 7\\\" is a gas efficient modulo by eight \\\"oldSelectorCount % 8\\\" \\n                    // \\\" << 5 is the same as multiplying by 32 ( * 32)\\n                    oldSelectorInSlotPosition = (oldSelectorCount & 7) << 5;\\n                }\\n                if (oldSelectorsSlotCount != selectorSlotCount) {\\n                    bytes32 oldSelectorSlot = ds.selectorSlots[oldSelectorsSlotCount];\\n                    // clears the selector we are deleting and puts the last selector in its place.\\n                    oldSelectorSlot =\\n                        (oldSelectorSlot & ~(CLEAR_SELECTOR_MASK >> oldSelectorInSlotPosition)) |\\n                        (bytes32(lastSelector) >> oldSelectorInSlotPosition);\\n                    // update storage with the modified slot\\n                    ds.selectorSlots[oldSelectorsSlotCount] = oldSelectorSlot;\\n                } else {\\n                    // clears the selector we are deleting and puts the last selector in its place.\\n                    _selectorSlot =\\n                        (_selectorSlot & ~(CLEAR_SELECTOR_MASK >> oldSelectorInSlotPosition)) |\\n                        (bytes32(lastSelector) >> oldSelectorInSlotPosition);\\n                }\\n                if (selectorInSlotIndex == 0) {\\n                    delete ds.selectorSlots[selectorSlotCount];\\n                    _selectorSlot = 0;\\n                }\\n\\n                unchecked {\\n                    selectorIndex++;\\n                }\\n            }\\n            _selectorCount = selectorSlotCount * 8 + selectorInSlotIndex;\\n        } else {\\n            revert(\\\"LibDiamondCut: Incorrect FacetCutAction\\\");\\n        }\\n        return (_selectorCount, _selectorSlot);\\n    }\\n\\n    function initializeDiamondCut(address _init, bytes memory _calldata) internal {\\n        if (_init == address(0)) {\\n            return;\\n        }\\n        enforceHasContractCode(_init, \\\"LibDiamondCut: _init address has no code\\\");        \\n        (bool success, bytes memory error) = _init.delegatecall(_calldata);\\n        if (!success) {\\n            if (error.length > 0) {\\n                // bubble up error\\n                /// @solidity memory-safe-assembly\\n                assembly {\\n                    let returndata_size := mload(error)\\n                    revert(add(32, error), returndata_size)\\n                }\\n            } else {\\n                revert InitializationFunctionReverted(_init, _calldata);\\n            }\\n        }\\n    }\\n\\n    function enforceHasContractCode(address _contract, string memory _errorMessage) internal view {\\n        uint256 contractSize;\\n        assembly {\\n            contractSize := extcodesize(_contract)\\n        }\\n        require(contractSize > 0, _errorMessage);\\n    }\\n}\\n\",\"keccak256\":\"0xaea50a523e0ff67f5fc59946320f11efcfc09c75a972788f2884b9d1198a83d9\",\"license\":\"MIT\"},\"contracts/libraries/LibMeta.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\npragma solidity ^0.8.1;\\n\\nlibrary LibMeta {\\n    bytes32 internal constant EIP712_DOMAIN_TYPEHASH =\\n        keccak256(bytes(\\\"EIP712Domain(string name,string version,uint256 salt,address verifyingContract)\\\"));\\n\\n    function domainSeparator(string memory name, string memory version) internal view returns (bytes32 domainSeparator_) {\\n        domainSeparator_ = keccak256(\\n            abi.encode(EIP712_DOMAIN_TYPEHASH, keccak256(bytes(name)), keccak256(bytes(version)), getChainID(), address(this))\\n        );\\n    }\\n\\n    function getChainID() internal view returns (uint256 id) {\\n        assembly {\\n            id := chainid()\\n        }\\n    }\\n\\n    function msgSender() internal view returns (address sender_) {\\n        if (msg.sender == address(this)) {\\n            bytes memory array = msg.data;\\n            uint256 index = msg.data.length;\\n            assembly {\\n                // Load the 32 bytes word from memory with the address on the lower 20 bytes, and mask those.\\n                sender_ := and(mload(add(array, index)), 0xffffffffffffffffffffffffffffffffffffffff)\\n            }\\n        } else {\\n            sender_ = msg.sender;\\n        }\\n    }\\n}\",\"keccak256\":\"0x4e6157c5f86b25f3b7357a43763d65fb9f6b90d6e7b3553b8ceb8dfaf4a8cc98\",\"license\":\"MIT\"},\"contracts/storage/facets/AppStorageFacet.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\npragma solidity ^0.8.0;\\n\\nimport {LibDiamond} from \\\"../../libraries/LibDiamond.sol\\\";\\nimport {LibMeta} from \\\"../../libraries/LibMeta.sol\\\";\\nimport \\\"../structs/AppStorage.sol\\\";\\n\\ncontract AppStorageFacet {\\n    AppStorage internal s;\\n\\n    function appStorage() internal pure returns (AppStorage storage ds) {\\n        assembly {\\n            ds.slot := 0\\n        }\\n    }\\n}\\n\\ncontract Modifiers {\\n    AppStorage internal s;\\n}\\n\",\"keccak256\":\"0xb41a959ba2427825947aad2802534dec2e72660228d24d316d7a17ce97e0ed32\",\"license\":\"MIT\"},\"contracts/storage/facets/ERC20StorageFacet.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\npragma solidity ^0.8.0;\\n\\nimport { LibDiamond } from \\\"../../libraries/LibDiamond.sol\\\";\\nimport \\\"../structs/ERC20FacetStorage.sol\\\";\\n\\ncontract ERC20StorageFacet {\\n\\n  function erc20Storage() internal pure returns (ERC20FacetStorage storage ds) {\\n      bytes32 position =  keccak256(\\\"diamond.erc20.diamond.storage\\\");\\n      assembly {\\n          ds.slot := position\\n      }\\n  }\\n}\\n\",\"keccak256\":\"0x2c0025fd2570c7f2ba2482010f163d8aba7a704659779034944dd24bd7000b47\",\"license\":\"MIT\"},\"contracts/storage/structs/AppStorage.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\npragma solidity ^0.8.0;\\n\\nstruct User {\\n  address account;\\n  uint256 telegramId;\\n  string useWallet;\\n  string nation;\\n}\\n\\n\\nstruct AppStorage {\\n  User admin;\\n  string appName;\\n  string appUrl;\\n  mapping(address => User) _users;\\n}\\n\",\"keccak256\":\"0x4b794e3a6be7faa2c2d2d8c2329b84762de7deeec2094e71bcb77e7567bf4cf3\",\"license\":\"MIT\"},\"contracts/storage/structs/ERC20FacetStorage.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\npragma solidity ^0.8.0;\\n\\nstruct ERC20FacetStorage {\\n  mapping(address => uint256) _balances;\\n  mapping(address => mapping(address => uint256)) _allowances;\\n  uint8 _decimals;\\n  uint256 _totalSupply;\\n  string _name;\\n  string _symbol;\\n}\\n\",\"keccak256\":\"0xae7a6d2596f3c4a11264d5a6068b6fd4cac087aa6093ed26ee7eb0bb4c2c1b08\",\"license\":\"MIT\"}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b506116d2806100206000396000f3fe608060405234801561001057600080fd5b50600436106100a95760003560e01c806370a082311161007157806370a082311461016857806394b91deb1461019857806395d89b41146101b6578063a9059cbb146101d4578063a944dff014610204578063dd62ed3e14610234576100a9565b806306fdde03146100ae578063095ea7b3146100cc57806318160ddd146100fc57806323b872dd1461011a578063313ce5671461014a575b600080fd5b6100b6610264565b6040516100c39190610d1a565b60405180910390f35b6100e660048036038101906100e19190610dd5565b610305565b6040516100f39190610e30565b60405180910390f35b61010461031a565b6040516101119190610e5a565b60405180910390f35b610134600480360381019061012f9190610e75565b610332565b6040516101419190610e30565b60405180910390f35b610152610353565b60405161015f9190610ee4565b60405180910390f35b610182600480360381019061017d9190610eff565b610378565b60405161018f9190610e5a565b60405180910390f35b6101a06103cf565b6040516101ad9190610e30565b60405180910390f35b6101be61050e565b6040516101cb9190610d1a565b60405180910390f35b6101ee60048036038101906101e99190610dd5565b6105af565b6040516101fb9190610e30565b60405180910390f35b61021e60048036038101906102199190610eff565b6105c4565b60405161022b9190610ffe565b60405180910390f35b61024e60048036038101906102499190611020565b6107b0565b60405161025b9190610e5a565b60405180910390f35b60606000610270610845565b90508060040180546102819061108f565b80601f01602080910402602001604051908101604052809291908181526020018280546102ad9061108f565b80156102fa5780601f106102cf576101008083540402835291602001916102fa565b820191906000526020600020905b8154815290600101906020018083116102dd57829003601f168201915b505050505091505090565b6000610312338484610872565b905092915050565b600080610325610845565b9050806003015491505090565b600061033f84848461097e565b61034a8484846109cd565b90509392505050565b60008061035e610845565b90508060020160009054906101000a900460ff1691505090565b600080610383610845565b90508060000160008473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002054915050919050565b6000806103da610845565b90506040518060400160405280600681526020017f6a616e676a750000000000000000000000000000000000000000000000000000815250816004019081610422919061129b565b506040518060400160405280600281526020017f6a6a000000000000000000000000000000000000000000000000000000000000815250816005019081610469919061129b565b5060128160020160006101000a81548160ff021916908360ff1602179055508060020160009054906101000a900460ff16600a6104a691906114cf565b620f42406104b4919061151a565b816003018190555080600301548160000160003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002081905550600191505090565b6060600061051a610845565b905080600501805461052b9061108f565b80601f01602080910402602001604051908101604052809291908181526020018280546105579061108f565b80156105a45780601f10610579576101008083540402835291602001916105a4565b820191906000526020600020905b81548152906001019060200180831161058757829003601f168201915b505050505091505090565b60006105bc3384846109cd565b905092915050565b6105cc610c4c565b60006105d6610b06565b90508060060160008473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020016000206040518060800160405290816000820160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001600182015481526020016002820180546106949061108f565b80601f01602080910402602001604051908101604052809291908181526020018280546106c09061108f565b801561070d5780601f106106e25761010080835404028352916020019161070d565b820191906000526020600020905b8154815290600101906020018083116106f057829003601f168201915b505050505081526020016003820180546107269061108f565b80601f01602080910402602001604051908101604052809291908181526020018280546107529061108f565b801561079f5780601f106107745761010080835404028352916020019161079f565b820191906000526020600020905b81548152906001019060200180831161078257829003601f168201915b505050505081525050915050919050565b6000806107bb610845565b90508060010160008573ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060008473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020016000205491505092915050565b6000807f17789449870c0f58d74ae3f2b54e2ffd15a4ba87c9c4b606fe8968555d61b02f90508091505090565b600061087e8483610b0b565b6000610888610845565b9050828160010160008773ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060008673ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020819055508373ffffffffffffffffffffffffffffffffffffffff168573ffffffffffffffffffffffffffffffffffffffff167f8c5be1e5ebec7d5bd14f71427d1e84f3dd0314c0f7b2291e5b200ac8c7c3b9258560405161096a9190610e5a565b60405180910390a360019150509392505050565b610989838383610b58565b6109c8576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004016109bf906115a8565b60405180910390fd5b505050565b60006109d98483610b0b565b60006109e3610845565b9050828160000160008773ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020016000206000828254610a3691906115c8565b92505081905550828160000160008673ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020016000206000828254610a8e91906115fc565b925050819055508373ffffffffffffffffffffffffffffffffffffffff168573ffffffffffffffffffffffffffffffffffffffff167fddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef85604051610af29190610e5a565b60405180910390a360019150509392505050565b600090565b610b158282610bf1565b610b54576040517f08c379a0000000000000000000000000000000000000000000000000000000008152600401610b4b9061167c565b60405180910390fd5b5050565b600080610b63610845565b9050828160010160008773ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060008673ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020016000205410159150509392505050565b600080610bfc610845565b9050828160000160008673ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002054101591505092915050565b6040518060800160405280600073ffffffffffffffffffffffffffffffffffffffff1681526020016000815260200160608152602001606081525090565b600081519050919050565b600082825260208201905092915050565b60005b83811015610cc4578082015181840152602081019050610ca9565b60008484015250505050565b6000601f19601f8301169050919050565b6000610cec82610c8a565b610cf68185610c95565b9350610d06818560208601610ca6565b610d0f81610cd0565b840191505092915050565b60006020820190508181036000830152610d348184610ce1565b905092915050565b600080fd5b600073ffffffffffffffffffffffffffffffffffffffff82169050919050565b6000610d6c82610d41565b9050919050565b610d7c81610d61565b8114610d8757600080fd5b50565b600081359050610d9981610d73565b92915050565b6000819050919050565b610db281610d9f565b8114610dbd57600080fd5b50565b600081359050610dcf81610da9565b92915050565b60008060408385031215610dec57610deb610d3c565b5b6000610dfa85828601610d8a565b9250506020610e0b85828601610dc0565b9150509250929050565b60008115159050919050565b610e2a81610e15565b82525050565b6000602082019050610e456000830184610e21565b92915050565b610e5481610d9f565b82525050565b6000602082019050610e6f6000830184610e4b565b92915050565b600080600060608486031215610e8e57610e8d610d3c565b5b6000610e9c86828701610d8a565b9350506020610ead86828701610d8a565b9250506040610ebe86828701610dc0565b9150509250925092565b600060ff82169050919050565b610ede81610ec8565b82525050565b6000602082019050610ef96000830184610ed5565b92915050565b600060208284031215610f1557610f14610d3c565b5b6000610f2384828501610d8a565b91505092915050565b610f3581610d61565b82525050565b610f4481610d9f565b82525050565b600082825260208201905092915050565b6000610f6682610c8a565b610f708185610f4a565b9350610f80818560208601610ca6565b610f8981610cd0565b840191505092915050565b6000608083016000830151610fac6000860182610f2c565b506020830151610fbf6020860182610f3b565b5060408301518482036040860152610fd78282610f5b565b91505060608301518482036060860152610ff18282610f5b565b9150508091505092915050565b600060208201905081810360008301526110188184610f94565b905092915050565b6000806040838503121561103757611036610d3c565b5b600061104585828601610d8a565b925050602061105685828601610d8a565b9150509250929050565b7f4e487b7100000000000000000000000000000000000000000000000000000000600052602260045260246000fd5b600060028204905060018216806110a757607f821691505b6020821081036110ba576110b9611060565b5b50919050565b7f4e487b7100000000000000000000000000000000000000000000000000000000600052604160045260246000fd5b60008190508160005260206000209050919050565b60006020601f8301049050919050565b600082821b905092915050565b6000600883026111517fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff82611114565b61115b8683611114565b95508019841693508086168417925050509392505050565b6000819050919050565b600061119861119361118e84610d9f565b611173565b610d9f565b9050919050565b6000819050919050565b6111b28361117d565b6111c66111be8261119f565b848454611121565b825550505050565b600090565b6111db6111ce565b6111e68184846111a9565b505050565b5b8181101561120a576111ff6000826111d3565b6001810190506111ec565b5050565b601f82111561124f57611220816110ef565b61122984611104565b81016020851015611238578190505b61124c61124485611104565b8301826111eb565b50505b505050565b600082821c905092915050565b600061127260001984600802611254565b1980831691505092915050565b600061128b8383611261565b9150826002028217905092915050565b6112a482610c8a565b67ffffffffffffffff8111156112bd576112bc6110c0565b5b6112c7825461108f565b6112d282828561120e565b600060209050601f83116001811461130557600084156112f3578287015190505b6112fd858261127f565b865550611365565b601f198416611313866110ef565b60005b8281101561133b57848901518255600182019150602085019450602081019050611316565b868310156113585784890151611354601f891682611261565b8355505b6001600288020188555050505b505050505050565b7f4e487b7100000000000000000000000000000000000000000000000000000000600052601160045260246000fd5b60008160011c9050919050565b6000808291508390505b60018511156113f3578086048111156113cf576113ce61136d565b5b60018516156113de5780820291505b80810290506113ec8561139c565b94506113b3565b94509492505050565b60008261140c57600190506114c8565b8161141a57600090506114c8565b8160018114611430576002811461143a57611469565b60019150506114c8565b60ff84111561144c5761144b61136d565b5b8360020a9150848211156114635761146261136d565b5b506114c8565b5060208310610133831016604e8410600b841016171561149e5782820a9050838111156114995761149861136d565b5b6114c8565b6114ab84848460016113a9565b925090508184048111156114c2576114c161136d565b5b81810290505b9392505050565b60006114da82610d9f565b91506114e583610ec8565b92506115127fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff84846113fc565b905092915050565b600061152582610d9f565b915061153083610d9f565b925082820261153e81610d9f565b915082820484148315176115555761155461136d565b5b5092915050565b7f45524332303a20496e73756666696369656e7420416c6c6f77616e6365000000600082015250565b6000611592601d83610c95565b915061159d8261155c565b602082019050919050565b600060208201905081810360008301526115c181611585565b9050919050565b60006115d382610d9f565b91506115de83610d9f565b92508282039050818111156115f6576115f561136d565b5b92915050565b600061160782610d9f565b915061161283610d9f565b925082820190508082111561162a5761162961136d565b5b92915050565b7f45524332303a20496e73756666696369656e742046756e647300000000000000600082015250565b6000611666601983610c95565b915061167182611630565b602082019050919050565b6000602082019050818103600083015261169581611659565b905091905056fea2646970667358221220967691d6b0a6159da2d4fd4f21b313b9ced01571f9a5c4462b695bc50f36fb0464736f6c63430008130033",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100a95760003560e01c806370a082311161007157806370a082311461016857806394b91deb1461019857806395d89b41146101b6578063a9059cbb146101d4578063a944dff014610204578063dd62ed3e14610234576100a9565b806306fdde03146100ae578063095ea7b3146100cc57806318160ddd146100fc57806323b872dd1461011a578063313ce5671461014a575b600080fd5b6100b6610264565b6040516100c39190610d1a565b60405180910390f35b6100e660048036038101906100e19190610dd5565b610305565b6040516100f39190610e30565b60405180910390f35b61010461031a565b6040516101119190610e5a565b60405180910390f35b610134600480360381019061012f9190610e75565b610332565b6040516101419190610e30565b60405180910390f35b610152610353565b60405161015f9190610ee4565b60405180910390f35b610182600480360381019061017d9190610eff565b610378565b60405161018f9190610e5a565b60405180910390f35b6101a06103cf565b6040516101ad9190610e30565b60405180910390f35b6101be61050e565b6040516101cb9190610d1a565b60405180910390f35b6101ee60048036038101906101e99190610dd5565b6105af565b6040516101fb9190610e30565b60405180910390f35b61021e60048036038101906102199190610eff565b6105c4565b60405161022b9190610ffe565b60405180910390f35b61024e60048036038101906102499190611020565b6107b0565b60405161025b9190610e5a565b60405180910390f35b60606000610270610845565b90508060040180546102819061108f565b80601f01602080910402602001604051908101604052809291908181526020018280546102ad9061108f565b80156102fa5780601f106102cf576101008083540402835291602001916102fa565b820191906000526020600020905b8154815290600101906020018083116102dd57829003601f168201915b505050505091505090565b6000610312338484610872565b905092915050565b600080610325610845565b9050806003015491505090565b600061033f84848461097e565b61034a8484846109cd565b90509392505050565b60008061035e610845565b90508060020160009054906101000a900460ff1691505090565b600080610383610845565b90508060000160008473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002054915050919050565b6000806103da610845565b90506040518060400160405280600681526020017f6a616e676a750000000000000000000000000000000000000000000000000000815250816004019081610422919061129b565b506040518060400160405280600281526020017f6a6a000000000000000000000000000000000000000000000000000000000000815250816005019081610469919061129b565b5060128160020160006101000a81548160ff021916908360ff1602179055508060020160009054906101000a900460ff16600a6104a691906114cf565b620f42406104b4919061151a565b816003018190555080600301548160000160003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002081905550600191505090565b6060600061051a610845565b905080600501805461052b9061108f565b80601f01602080910402602001604051908101604052809291908181526020018280546105579061108f565b80156105a45780601f10610579576101008083540402835291602001916105a4565b820191906000526020600020905b81548152906001019060200180831161058757829003601f168201915b505050505091505090565b60006105bc3384846109cd565b905092915050565b6105cc610c4c565b60006105d6610b06565b90508060060160008473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020016000206040518060800160405290816000820160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001600182015481526020016002820180546106949061108f565b80601f01602080910402602001604051908101604052809291908181526020018280546106c09061108f565b801561070d5780601f106106e25761010080835404028352916020019161070d565b820191906000526020600020905b8154815290600101906020018083116106f057829003601f168201915b505050505081526020016003820180546107269061108f565b80601f01602080910402602001604051908101604052809291908181526020018280546107529061108f565b801561079f5780601f106107745761010080835404028352916020019161079f565b820191906000526020600020905b81548152906001019060200180831161078257829003601f168201915b505050505081525050915050919050565b6000806107bb610845565b90508060010160008573ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060008473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020016000205491505092915050565b6000807f17789449870c0f58d74ae3f2b54e2ffd15a4ba87c9c4b606fe8968555d61b02f90508091505090565b600061087e8483610b0b565b6000610888610845565b9050828160010160008773ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060008673ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020819055508373ffffffffffffffffffffffffffffffffffffffff168573ffffffffffffffffffffffffffffffffffffffff167f8c5be1e5ebec7d5bd14f71427d1e84f3dd0314c0f7b2291e5b200ac8c7c3b9258560405161096a9190610e5a565b60405180910390a360019150509392505050565b610989838383610b58565b6109c8576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004016109bf906115a8565b60405180910390fd5b505050565b60006109d98483610b0b565b60006109e3610845565b9050828160000160008773ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020016000206000828254610a3691906115c8565b92505081905550828160000160008673ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020016000206000828254610a8e91906115fc565b925050819055508373ffffffffffffffffffffffffffffffffffffffff168573ffffffffffffffffffffffffffffffffffffffff167fddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef85604051610af29190610e5a565b60405180910390a360019150509392505050565b600090565b610b158282610bf1565b610b54576040517f08c379a0000000000000000000000000000000000000000000000000000000008152600401610b4b9061167c565b60405180910390fd5b5050565b600080610b63610845565b9050828160010160008773ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060008673ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020016000205410159150509392505050565b600080610bfc610845565b9050828160000160008673ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002054101591505092915050565b6040518060800160405280600073ffffffffffffffffffffffffffffffffffffffff1681526020016000815260200160608152602001606081525090565b600081519050919050565b600082825260208201905092915050565b60005b83811015610cc4578082015181840152602081019050610ca9565b60008484015250505050565b6000601f19601f8301169050919050565b6000610cec82610c8a565b610cf68185610c95565b9350610d06818560208601610ca6565b610d0f81610cd0565b840191505092915050565b60006020820190508181036000830152610d348184610ce1565b905092915050565b600080fd5b600073ffffffffffffffffffffffffffffffffffffffff82169050919050565b6000610d6c82610d41565b9050919050565b610d7c81610d61565b8114610d8757600080fd5b50565b600081359050610d9981610d73565b92915050565b6000819050919050565b610db281610d9f565b8114610dbd57600080fd5b50565b600081359050610dcf81610da9565b92915050565b60008060408385031215610dec57610deb610d3c565b5b6000610dfa85828601610d8a565b9250506020610e0b85828601610dc0565b9150509250929050565b60008115159050919050565b610e2a81610e15565b82525050565b6000602082019050610e456000830184610e21565b92915050565b610e5481610d9f565b82525050565b6000602082019050610e6f6000830184610e4b565b92915050565b600080600060608486031215610e8e57610e8d610d3c565b5b6000610e9c86828701610d8a565b9350506020610ead86828701610d8a565b9250506040610ebe86828701610dc0565b9150509250925092565b600060ff82169050919050565b610ede81610ec8565b82525050565b6000602082019050610ef96000830184610ed5565b92915050565b600060208284031215610f1557610f14610d3c565b5b6000610f2384828501610d8a565b91505092915050565b610f3581610d61565b82525050565b610f4481610d9f565b82525050565b600082825260208201905092915050565b6000610f6682610c8a565b610f708185610f4a565b9350610f80818560208601610ca6565b610f8981610cd0565b840191505092915050565b6000608083016000830151610fac6000860182610f2c565b506020830151610fbf6020860182610f3b565b5060408301518482036040860152610fd78282610f5b565b91505060608301518482036060860152610ff18282610f5b565b9150508091505092915050565b600060208201905081810360008301526110188184610f94565b905092915050565b6000806040838503121561103757611036610d3c565b5b600061104585828601610d8a565b925050602061105685828601610d8a565b9150509250929050565b7f4e487b7100000000000000000000000000000000000000000000000000000000600052602260045260246000fd5b600060028204905060018216806110a757607f821691505b6020821081036110ba576110b9611060565b5b50919050565b7f4e487b7100000000000000000000000000000000000000000000000000000000600052604160045260246000fd5b60008190508160005260206000209050919050565b60006020601f8301049050919050565b600082821b905092915050565b6000600883026111517fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff82611114565b61115b8683611114565b95508019841693508086168417925050509392505050565b6000819050919050565b600061119861119361118e84610d9f565b611173565b610d9f565b9050919050565b6000819050919050565b6111b28361117d565b6111c66111be8261119f565b848454611121565b825550505050565b600090565b6111db6111ce565b6111e68184846111a9565b505050565b5b8181101561120a576111ff6000826111d3565b6001810190506111ec565b5050565b601f82111561124f57611220816110ef565b61122984611104565b81016020851015611238578190505b61124c61124485611104565b8301826111eb565b50505b505050565b600082821c905092915050565b600061127260001984600802611254565b1980831691505092915050565b600061128b8383611261565b9150826002028217905092915050565b6112a482610c8a565b67ffffffffffffffff8111156112bd576112bc6110c0565b5b6112c7825461108f565b6112d282828561120e565b600060209050601f83116001811461130557600084156112f3578287015190505b6112fd858261127f565b865550611365565b601f198416611313866110ef565b60005b8281101561133b57848901518255600182019150602085019450602081019050611316565b868310156113585784890151611354601f891682611261565b8355505b6001600288020188555050505b505050505050565b7f4e487b7100000000000000000000000000000000000000000000000000000000600052601160045260246000fd5b60008160011c9050919050565b6000808291508390505b60018511156113f3578086048111156113cf576113ce61136d565b5b60018516156113de5780820291505b80810290506113ec8561139c565b94506113b3565b94509492505050565b60008261140c57600190506114c8565b8161141a57600090506114c8565b8160018114611430576002811461143a57611469565b60019150506114c8565b60ff84111561144c5761144b61136d565b5b8360020a9150848211156114635761146261136d565b5b506114c8565b5060208310610133831016604e8410600b841016171561149e5782820a9050838111156114995761149861136d565b5b6114c8565b6114ab84848460016113a9565b925090508184048111156114c2576114c161136d565b5b81810290505b9392505050565b60006114da82610d9f565b91506114e583610ec8565b92506115127fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff84846113fc565b905092915050565b600061152582610d9f565b915061153083610d9f565b925082820261153e81610d9f565b915082820484148315176115555761155461136d565b5b5092915050565b7f45524332303a20496e73756666696369656e7420416c6c6f77616e6365000000600082015250565b6000611592601d83610c95565b915061159d8261155c565b602082019050919050565b600060208201905081810360008301526115c181611585565b9050919050565b60006115d382610d9f565b91506115de83610d9f565b92508282039050818111156115f6576115f561136d565b5b92915050565b600061160782610d9f565b915061161283610d9f565b925082820190508082111561162a5761162961136d565b5b92915050565b7f45524332303a20496e73756666696369656e742046756e647300000000000000600082015250565b6000611666601983610c95565b915061167182611630565b602082019050919050565b6000602082019050818103600083015261169581611659565b905091905056fea2646970667358221220967691d6b0a6159da2d4fd4f21b313b9ced01571f9a5c4462b695bc50f36fb0464736f6c63430008130033",
+  "devdoc": {
+    "events": {
+      "Approval(address,address,uint256)": {
+        "details": "Emitted when the allowance of a `spender` for an `owner` is set by a call to {approve}. `value` is the new allowance."
+      },
+      "Transfer(address,address,uint256)": {
+        "details": "Emitted when `value` tokens are moved from one account (`from`) to another (`to`). Note that `value` may be zero."
+      }
+    },
+    "kind": "dev",
+    "methods": {
+      "totalSupply()": {
+        "details": "Returns the amount of tokens in existence."
+      }
+    },
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  },
+  "storageLayout": {
+    "storage": [
+      {
+        "astId": 1994,
+        "contract": "contracts/facets/ERC20Facet.sol:Erc20FacetToken",
+        "label": "s",
+        "offset": 0,
+        "slot": "0",
+        "type": "t_struct(AppStorage)2051_storage"
+      }
+    ],
+    "types": {
+      "t_address": {
+        "encoding": "inplace",
+        "label": "address",
+        "numberOfBytes": "20"
+      },
+      "t_mapping(t_address,t_struct(User)2038_storage)": {
+        "encoding": "mapping",
+        "key": "t_address",
+        "label": "mapping(address => struct User)",
+        "numberOfBytes": "32",
+        "value": "t_struct(User)2038_storage"
+      },
+      "t_string_storage": {
+        "encoding": "bytes",
+        "label": "string",
+        "numberOfBytes": "32"
+      },
+      "t_struct(AppStorage)2051_storage": {
+        "encoding": "inplace",
+        "label": "struct AppStorage",
+        "members": [
+          {
+            "astId": 2041,
+            "contract": "contracts/facets/ERC20Facet.sol:Erc20FacetToken",
+            "label": "admin",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_struct(User)2038_storage"
+          },
+          {
+            "astId": 2043,
+            "contract": "contracts/facets/ERC20Facet.sol:Erc20FacetToken",
+            "label": "appName",
+            "offset": 0,
+            "slot": "4",
+            "type": "t_string_storage"
+          },
+          {
+            "astId": 2045,
+            "contract": "contracts/facets/ERC20Facet.sol:Erc20FacetToken",
+            "label": "appUrl",
+            "offset": 0,
+            "slot": "5",
+            "type": "t_string_storage"
+          },
+          {
+            "astId": 2050,
+            "contract": "contracts/facets/ERC20Facet.sol:Erc20FacetToken",
+            "label": "_users",
+            "offset": 0,
+            "slot": "6",
+            "type": "t_mapping(t_address,t_struct(User)2038_storage)"
+          }
+        ],
+        "numberOfBytes": "224"
+      },
+      "t_struct(User)2038_storage": {
+        "encoding": "inplace",
+        "label": "struct User",
+        "members": [
+          {
+            "astId": 2031,
+            "contract": "contracts/facets/ERC20Facet.sol:Erc20FacetToken",
+            "label": "account",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_address"
+          },
+          {
+            "astId": 2033,
+            "contract": "contracts/facets/ERC20Facet.sol:Erc20FacetToken",
+            "label": "telegramId",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_uint256"
+          },
+          {
+            "astId": 2035,
+            "contract": "contracts/facets/ERC20Facet.sol:Erc20FacetToken",
+            "label": "useWallet",
+            "offset": 0,
+            "slot": "2",
+            "type": "t_string_storage"
+          },
+          {
+            "astId": 2037,
+            "contract": "contracts/facets/ERC20Facet.sol:Erc20FacetToken",
+            "label": "nation",
+            "offset": 0,
+            "slot": "3",
+            "type": "t_string_storage"
+          }
+        ],
+        "numberOfBytes": "128"
+      },
+      "t_uint256": {
+        "encoding": "inplace",
+        "label": "uint256",
+        "numberOfBytes": "32"
+      }
+    }
+  }
+}

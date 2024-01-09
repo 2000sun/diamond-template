@@ -1,0 +1,67 @@
+{
+  "address": "0xA564a0D5bF42C37173826f6FED1c0C484561bFd7",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "_dataA",
+          "type": "bytes32"
+        }
+      ],
+      "name": "getDataA",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "_dataA",
+          "type": "bytes32"
+        }
+      ],
+      "name": "setDataA",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "transactionHash": "0x423ff7cdf19c215df9ba73a8623d7cc02c4e9d4d04e2881c8f41f58fa2093ccb",
+  "receipt": {
+    "to": "0x4e59b44847b379578588920cA78FbF26c0B4956C",
+    "from": "0x0034f7306BBe277A7Eb042f87e3EA65D83cFa854",
+    "contractAddress": null,
+    "transactionIndex": 0,
+    "gasUsed": "170186",
+    "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "blockHash": "0x9e2c4eae8aec6880caef969702f3ac6df96212f4e2b7ea855df440667bbf006e",
+    "transactionHash": "0x423ff7cdf19c215df9ba73a8623d7cc02c4e9d4d04e2881c8f41f58fa2093ccb",
+    "logs": [],
+    "blockNumber": 143180940,
+    "cumulativeGasUsed": "170186",
+    "status": 1,
+    "byzantium": true
+  },
+  "args": [],
+  "numDeployments": 2,
+  "solcInputHash": "451c46e96a32929335e3f44e71e5994e",
+  "metadata": "{\"compiler\":{\"version\":\"0.8.19+commit.7dd6d404\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"_dataA\",\"type\":\"bytes32\"}],\"name\":\"getDataA\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"_dataA\",\"type\":\"bytes32\"}],\"name\":\"setDataA\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/facets/FacetC.sol\":\"FacetC\"},\"evmVersion\":\"paris\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\",\"useLiteralContent\":true},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"contracts/facets/FacetC.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\npragma solidity ^0.8.0;\\n\\nlibrary LibA {\\n\\nstruct DiamondStorage {\\n    address owner;\\n    bytes32 dataA;\\n}\\n\\n\\nfunction diamondStorage() internal pure returns(DiamondStorage storage ds) {\\n    bytes32 storagePosition = keccak256(\\\"diamond.storage.LibA\\\");\\n    assembly {\\n    ds.slot := storagePosition\\n    }\\n}\\n}\\n\\n\\ncontract FacetC {\\n    function setDataA(bytes32 _dataA) external {\\n        LibA.DiamondStorage storage ds = LibA.diamondStorage();\\n        ds.dataA = _dataA;\\n    }\\n\\n      function getDataA(bytes32 _dataA) external {\\n        LibA.DiamondStorage storage ds = LibA.diamondStorage();\\n        ds.dataA = _dataA;\\n    }\\n}\\n\\n\\n\\n// 0xEd322bD08aD78CD86bbD35c50f146cfCeC6782B4\",\"keccak256\":\"0xdfaa935f286268531fb1c8b34aa567d711d3752cd744e389254482a154986820\",\"license\":\"MIT\"}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b50610170806100206000396000f3fe608060405234801561001057600080fd5b50600436106100365760003560e01c806360f6447c1461003b578063ec643efd14610057575b600080fd5b6100556004803603810190610050919061010d565b610073565b005b610071600480360381019061006c919061010d565b61008c565b005b600061007d6100a5565b90508181600101819055505050565b60006100966100a5565b90508181600101819055505050565b6000807f13f464f5b1a0affee1715000e48aa76e15a8bafca7bfca161fb73dde5768e2b290508091505090565b600080fd5b6000819050919050565b6100ea816100d7565b81146100f557600080fd5b50565b600081359050610107816100e1565b92915050565b600060208284031215610123576101226100d2565b5b6000610131848285016100f8565b9150509291505056fea2646970667358221220e7158266050553738e83b231de7bc7f1ecba0b187ebb72a8b12fee92a401f1db64736f6c63430008130033",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100365760003560e01c806360f6447c1461003b578063ec643efd14610057575b600080fd5b6100556004803603810190610050919061010d565b610073565b005b610071600480360381019061006c919061010d565b61008c565b005b600061007d6100a5565b90508181600101819055505050565b60006100966100a5565b90508181600101819055505050565b6000807f13f464f5b1a0affee1715000e48aa76e15a8bafca7bfca161fb73dde5768e2b290508091505090565b600080fd5b6000819050919050565b6100ea816100d7565b81146100f557600080fd5b50565b600081359050610107816100e1565b92915050565b600060208284031215610123576101226100d2565b5b6000610131848285016100f8565b9150509291505056fea2646970667358221220e7158266050553738e83b231de7bc7f1ecba0b187ebb72a8b12fee92a401f1db64736f6c63430008130033",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  },
+  "storageLayout": {
+    "storage": [],
+    "types": null
+  }
+}

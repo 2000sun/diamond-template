@@ -1,0 +1,35 @@
+{
+  "language": "Solidity",
+  "sources": {
+    "contracts/facets/FacetC.sol": {
+      "content": "// SPDX-License-Identifier: MIT\npragma solidity ^0.8.0;\n\nlibrary LibA {\n\nstruct DiamondStorage {\n    address owner;\n    bytes32 dataA;\n}\n\n\nfunction diamondStorage() internal pure returns(DiamondStorage storage ds) {\n    bytes32 storagePosition = keccak256(\"diamond.storage.LibA\");\n    assembly {\n    ds.slot := storagePosition\n    }\n}\n}\n\n\ncontract FacetC {\n    function setDataA(bytes32 _dataA) external {\n        LibA.DiamondStorage storage ds = LibA.diamondStorage();\n        ds.dataA = _dataA;\n    }\n\n      function getDataA(bytes32 _dataA) external {\n        LibA.DiamondStorage storage ds = LibA.diamondStorage();\n        ds.dataA = _dataA;\n    }\n}\n\n\n\n// 0xEd322bD08aD78CD86bbD35c50f146cfCeC6782B4"
+    }
+  },
+  "settings": {
+    "optimizer": {
+      "enabled": false,
+      "runs": 200
+    },
+    "outputSelection": {
+      "*": {
+        "*": [
+          "abi",
+          "evm.bytecode",
+          "evm.deployedBytecode",
+          "evm.methodIdentifiers",
+          "metadata",
+          "devdoc",
+          "userdoc",
+          "storageLayout",
+          "evm.gasEstimates"
+        ],
+        "": [
+          "ast"
+        ]
+      }
+    },
+    "metadata": {
+      "useLiteralContent": true
+    }
+  }
+}
